@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Luna y venus</title>
+    <link rel="shortcut icon" href="/moon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="instructions fade-in">
+        <h1>Luna y venus</h1>
+        <p>Ponte los audífonos, uno en cada oído. Sube un poco el volumen y</p>
+        <p>Cierra los ojos... respira profundo... y listo.... 🌕</p>
+
+
+        <audio id="audio">
+            <source src="/8d.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+          </audio>
+      
+          <div id="customPlayer">
+            <button id="playBtn" onclick="toggleAudio()"> ▶ </button>
+            <div class="progress" onclick="seek(event)">
+              <div class="progress-filled" id="progressBar"></div>
+            </div>
+            <div class="time" id="time">0:00 / 0:00</div>
+          </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
